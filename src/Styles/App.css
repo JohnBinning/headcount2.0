@@ -44,7 +44,10 @@ p {
 }
 
 .low-data {
-  color: salmon;
+  /*color: rgba(250,128,114, 0.9);*/
+  background: -webkit-linear-gradient(left, rgba(250,128,114, 1), rgba(250,128,114, 0.1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .high-data {
@@ -52,7 +55,7 @@ p {
 }
 
 .is-selected {
-  background-color: cyan;
+  background-color: #666666;
 }
 
 .not-selected{

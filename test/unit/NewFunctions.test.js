@@ -1,6 +1,19 @@
 import DistrictRepository from '../../src/Helpers/helper.js'
 import kinderData from '../../data/kindergartners_in_full_day_program.js'
 
+describe('selectionMatch', () =>{
+  const district = new DistrictRepository(kinderData)
+
+  test('selection match returns a selected string', () => {
+    let selectionMatch =  district.selectionMatch('cats', ['cats', 'garbage'])
+    expect(selectionMatch).toBe('is-selected')
+  })
+
+  test('selection match returns undefined', () => {
+    let selectionMatch =  district.selectionMatch('cats', ['cars', 'garbage'])
+    expect(selectionMatch).toBe(undefined)
+  }) 
+})
 
 describe('makeCardArray', () =>{
   const district = new DistrictRepository(kinderData)
