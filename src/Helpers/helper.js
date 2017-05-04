@@ -5,15 +5,9 @@ export default class DistrictRepository {
   }
 
   selectionMatch(location, selected){
-    let result
-    selected.forEach((selectItem) =>{
-      if(location === selectItem){
-        result = "is-selected"
-      } else {
-        result = "not-selected"
-      }
-    })
-    return result
+    var results = selected.find((s) => s === location )
+    if(results){ return 'is-selected' }
+    return results
   }
 
   makeCardArray(data) {
