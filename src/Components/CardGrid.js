@@ -5,7 +5,6 @@ import DistrictRepository from '../Helpers/helper'
 import kinderData from '../../data/kindergartners_in_full_day_program.js';
 
 const CardGrid = ({ schools, searched, cardClick, selected }) => {
-
   return(
     <section className="card-grid">
       {schools.findAllMatches(searched).map((school, i) =>{
