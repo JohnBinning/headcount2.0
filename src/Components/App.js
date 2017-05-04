@@ -4,6 +4,7 @@ import '../Styles/normalize.css'
 import '../Styles/App.css'
 import Search from './Search.js'
 import CardGrid from './CardGrid.js'
+import ComparisonGrid from './ComparisonGrid.js'
 import DistrictRepository from '../Helpers/helper'
 import kinderData from '../../data/kindergartners_in_full_day_program.js'
 
@@ -50,14 +51,26 @@ class App extends Component {
     this.setState({selected: this.state.selected})
   }
 
+  returnSelected(){
+    // console.log(this.state.searched)
+    let why = this.schools.data[this.state.selected[0]] || {location: ''}
+    console.log(why.location)
+    return this.schools.data[why.location] || "zzzzzzzzzzzz"
+  }
+
   render() {
     return (
       <div>
         <Search handleSearch = {this.handleSearch.bind(this)}/>
+        <ComparisonGrid
+                  schools = {this.schools}
+                  cardClick = {this.handleCardSelect.bind(this)}
+                  selected = {this.state.selected}/>
         <CardGrid schools = {this.schools}
                   searched = {this.state.searched}
                   cardClick = {this.handleCardSelect.bind(this)}
                   selected = {this.state.selected}/>
+
       </div>
     )
   }
