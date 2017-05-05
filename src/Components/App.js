@@ -52,7 +52,6 @@ class App extends Component {
   }
 
   returnSelected(){
-    // console.log(this.state.searched)
     let why = this.schools.data[this.state.selected[0]] || {location: ''}
     console.log(why.location)
     return this.schools.data[why.location] || "zzzzzzzzzzzz"
