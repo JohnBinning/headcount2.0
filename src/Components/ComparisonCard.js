@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-const ComparisonCard = ({}) => {
+const ComparisonCard = ({locationA, locationB, avgA, avgB, comparisonAverage}) => {
   return(
     <div>
-      something goes here
+      <h3>{locationA} {avgA}</h3>
+      <h2>{comparisonAverage.compared}</h2>
+      <h3>{locationB} {avgB}</h3>
     </div>
   )
 }
