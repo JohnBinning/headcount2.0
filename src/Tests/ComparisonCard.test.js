@@ -75,7 +75,7 @@ describe('Comparison Card', () =>{
                           comparisonAverage = {comparisonAverage}/>);
     let found = wrapper.find("h3").first()
 
-    expect(found.text()).toEqual("Colorado 0.53")
+    expect(found.text()).toEqual("Colorado: 0.53")
   })
 
   it('should render the combined average', () =>{
