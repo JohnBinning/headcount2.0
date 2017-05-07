@@ -1,8 +1,10 @@
+/* eslint-disable */
 import React from 'react'
 import ComparisonCard from './ComparisonCard.js'
 import Card from './Card.js'
 import DistrictRepository from '../Helpers/helper'
 import kinderData from '../../data/kindergartners_in_full_day_program.js';
+import PropTypes from 'prop-types'
 
 
 const ComparisonGrid = ({schools, cardClick, selected}) => {
@@ -60,6 +62,12 @@ const ComparisonGrid = ({schools, cardClick, selected}) => {
       <div></div>
     )
   }
+}
+
+ComparisonGrid.propTypes = {
+  schools: PropTypes.object,
+  cardClick: PropTypes.func,
+  selected: PropTypes.array,
 }
 
 export default ComparisonGrid

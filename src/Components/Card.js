@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Card  = ( {location, data, schools, cardClick, selected, id} ) => {
   let cssClass = schools.selectionMatch(location, selected)
@@ -20,6 +21,15 @@ const Card  = ( {location, data, schools, cardClick, selected, id} ) => {
       })}
     </section>
   )
+}
+
+Card.propTypes = {
+  location: PropTypes.string,
+  data: PropTypes.object,
+  schools: PropTypes.object,
+  cardClick: PropTypes.func,
+  selected: PropTypes.array,
+  id: PropTypes.string
 }
 
 export default Card

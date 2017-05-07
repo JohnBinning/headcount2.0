@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export default class Search extends Component {
   constructor(){
@@ -21,4 +22,8 @@ export default class Search extends Component {
       </div>
     )
   }
+}
+
+Search.propTypes = {
+  handleSearch: PropTypes.func,
 }
