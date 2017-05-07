@@ -14,7 +14,6 @@ class App extends Component {
     super()
     this.schools=new DistrictRepository(kinderData)
     this.state={
-      full: this.schools.data,
       searched : '',
       selected: []
     }
