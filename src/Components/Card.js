@@ -21,6 +21,7 @@ const Card  = ( {location, data, schools, cardClick, selected, id} ) => {
         )
       })}
       <div className={`card-avg ${hiddenOrNot}`}>Avg: {cardAvg}</div>
+      <div className="chalk"></div>
     </section>
   )
 }

@@ -13,7 +13,7 @@ body{
 .card {
   border: 5px solid #777777;
   border-top-color: #878787;
-  border-bottom-color: #565656;
+  border-bottom-color: #dd9b5d;
   width: 290px;
   margin: 10px;
   height: 350px;
@@ -63,7 +63,7 @@ p {
 }
 
 .hidden-avg {
-  display: none;
+  visibility: hidden;
 }
 
 .card-avg {
@@ -71,6 +71,15 @@ p {
   font-family: "Walter Turncoat";
   text-align: center;
   margin-top: 5%;
+}
+
+.chalk {
+  background-color: white;
+  width: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 3px;
+
 }
 
 .comparison-card {
@@ -83,6 +92,7 @@ p {
   background-color: #999999;
   text-align: center;
 }
+
 .value{
   font-size: 20px;
 }
