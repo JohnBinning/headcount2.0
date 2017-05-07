@@ -14,6 +14,7 @@ export default class Search extends Component {
     return(
       <div className = "search">
         <input type = "text"
+              placeholder="Filter"
               value = {this.state.search}
               onChange = {(e) =>{
                 this.setState({search: e.target.value})
