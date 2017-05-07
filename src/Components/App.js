@@ -49,12 +49,6 @@ class App extends Component {
     this.setState({selected: this.state.selected})
   }
 
-  returnSelected(){
-    let why = this.schools.data[this.state.selected[0]] || {location: ''}
-    console.log(why.location)
-    return this.schools.data[why.location] || "zzzzzzzzzzzz"
-  }
-
   render() {
     return (
       <div>

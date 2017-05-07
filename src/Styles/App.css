@@ -66,6 +66,13 @@ p {
   display: none;
 }
 
+.card-avg {
+  color: white;
+  font-family: "Walter Turncoat";
+  text-align: center;
+  margin-top: 5%;
+}
+
 .comparison-card {
   border: 5px solid #777777;
   border-top-color: #878787;
