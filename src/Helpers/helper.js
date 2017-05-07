@@ -6,7 +6,9 @@ export default class DistrictRepository {
 
   selectionMatch(location, selected){
     var results = selected.find((s) => s === location )
-    if(results){ return 'is-selected' }
+    if(results){
+      return 'is-selected'
+     }
     return results
   }
 

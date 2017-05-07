@@ -18,7 +18,7 @@ const ComparisonGrid = ({schools, cardClick, selected}) => {
 
     if (!second) {
       return (
-        <div>
+        <div className = "compare-grid">
           <Card location = {first.location}
             data = {first.data}
             schools = {schools}
@@ -32,7 +32,7 @@ const ComparisonGrid = ({schools, cardClick, selected}) => {
       let secondAvg = schools.findAverage(second.location)
       let comparisonAverage = schools.compareDistrictAverages(first.location, second.location)
       return (
-        <div>
+          <div className = "compare-grid">
           <Card location = {first.location}
             data = {first.data}
             schools = {schools}
