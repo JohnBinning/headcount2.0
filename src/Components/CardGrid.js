@@ -9,6 +9,7 @@ const CardGrid = ({ schools, searched, cardClick, selected }) => {
   return(
     <section className="card-grid">
       {schools.findAllMatches(searched).map((school, i) =>{
+        // console.log(school.data);
         return(
           <div key = {i} >
              <Card location = {school.location}
