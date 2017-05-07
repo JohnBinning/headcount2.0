@@ -12,6 +12,14 @@ export default class DistrictRepository {
     return results
   }
 
+  selectionAverage(location, selected){
+    var results = selected.find((s) => s === location )
+    if(!results){
+      return 'hidden-avg'
+     }
+    return results
+  }
+
   makeCardArray(data) {
     const dataPairs = Object.keys(data).map((yearData) =>{
       return `${yearData}: ${data[yearData]}`

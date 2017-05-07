@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 
 const Card  = ( {location, data, schools, cardClick, selected, id} ) => {
   let cssClass = schools.selectionMatch(location, selected)
-
+  let cardAvg = schools.findAverage(location)
   let dataPairs = schools.makeCardArray(data)
+  let hiddenOrNot = schools.selectionAverage(location, selected)
   return(
     <section className = {`card ${cssClass}`}
              onClick = {cardClick.bind(null, location)}>
@@ -19,6 +20,7 @@ const Card  = ( {location, data, schools, cardClick, selected, id} ) => {
           </div>
         )
       })}
+      <div className={hiddenOrNot}>{cardAvg}</div>
     </section>
   )
 }
