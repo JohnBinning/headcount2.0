@@ -1,4 +1,6 @@
+/* eslint-disable */
 import React from 'react'
+import PropTypes from 'prop-types'
 
 
 const ComparisonCard = ({locationA, locationB, avgA, avgB, comparisonAverage}) => {
@@ -9,6 +11,14 @@ const ComparisonCard = ({locationA, locationB, avgA, avgB, comparisonAverage}) =
       <h3 className = "location-b" >{locationB} <span className = "value">{avgB}</span></h3>
     </div>
   )
+}
+
+ComparisonCard.propTypes = {
+  locationA: PropTypes.string,
+  locationB: PropTypes.string,
+  avgA: PropTypes.number,
+  avgB: PropTypes.number,
+  comparisonAverage: PropTypes.object
 }
 
 export default ComparisonCard
