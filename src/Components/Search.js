@@ -18,7 +18,7 @@ export default class Search extends Component {
               value = {this.state.search}
               onChange = {(e) =>{
                 this.setState({search: e.target.value})
-                this.props.handleSearch(this.state.search)
+                this.props.handleSearch(e.target.value)
               }}/>
       </div>
     )
