@@ -4,6 +4,13 @@ export default class DistrictRepository {
     this.data = this.cleanData(kinderData)
   }
 
+  comparisonEvaluation(selected, num){
+    let match = this.findAllMatches().find((school, i) =>{
+        return this.data[selected[num]] === school
+      })
+    return match
+    }
+
   selectionMatch(location, selected){
     var results = selected.find((s) => s === location )
     if(results){

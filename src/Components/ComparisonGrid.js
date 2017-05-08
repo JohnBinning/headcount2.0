@@ -10,16 +10,10 @@ import PropTypes from 'prop-types'
 const ComparisonGrid = ({schools, cardClick, selected}) => {
 
   //can refactor
-  
+
   if(selected.length === 1 || selected.length === 2){
-    let first = schools.findAllMatches().find((school, i) =>{
-        return schools.data[selected[0]] === school
-    })
-    let second = schools.findAllMatches().find((school, i) =>{
-        return schools.data[selected[1]] === school
-    })
-
-
+    let first = schools.comparisonEvaluation(selected, 0)
+    let second = schools.comparisonEvaluation(selected, 1)
 
     if (!second) {
       return (
