@@ -4,20 +4,20 @@
   font-family: "Lato";
 }
 body{
-  background-image: url(https://images.designtrends.com/wp-content/uploads/2015/12/22092207/Seamless-Wooden-Floor-Texture.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(https://images.designtrends.com/wp-content/uploads/2015/12/22092207/Seamless-Wooden-Floor-Texture.jpg);
   background-size: 500px;
 }
 
 .card {
-  border: 5px solid #777777;
-  border-top-color: #878787;
-  border-bottom-color: #dd9b5d;
-  width: 290px;
-  margin: 10px;
-  height: 350px;
   background-color: #444444;
+  border: 5px solid #777777;
+  border-bottom-color: #dd9b5d;
+  border-top-color: #878787;
+  height: 350px;
+  margin: 10px;
+  width: 290px;
 }
 
 .card-grid {
@@ -27,15 +27,15 @@ body{
 }
 
 .card-info {
-  margin-top: 5px;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .card-school-name {
+  color: #ededed;
   font-family: "Walter Turncoat";
   font-size: 18px;
   text-align: center;
-  color: #ededed;
 }
 
 p {
@@ -44,7 +44,6 @@ p {
 }
 
 .low-data {
-  /*color: rgba(250,128,114, 0.9);*/
   background: -webkit-linear-gradient(left, rgba(250,128,114, 1), rgba(250,128,114, 0.1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -76,21 +75,21 @@ p {
 .chalk {
   background-color: white;
   height: 3px;
-  margin-top: 10px;
   margin-left: 20px;
+  margin-top: 10px;
   width: 15px;
 }
 
 .comparison-card {
-  border: 5px solid #777777;
-  border-top-color: #878787;
-  border-bottom-color: #dd9b5d;
-  width: 290px;
-  margin: 10px;
-  height: 350px;
-  color: white;
   background-color: #344E31;
+  border: 5px solid #777777;
+  border-bottom-color: #dd9b5d;
+  border-top-color: #878787;
+  color: white;
+  height: 350px;
+  margin: 10px;
   text-align: center;
+  width: 290px;
 }
 
 .value{
@@ -98,42 +97,42 @@ p {
 }
 
 .compare-grid{
+  background-color: rgba(0,0,0, 0.6);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 20px;
-  background-color: rgba(0,0,0, 0.6);
 }
 
 .location-a {
   font-family: "Walter Turncoat";
-  margin-top: 40px;
   margin-bottom: 100px;
+  margin-top: 40px;
 }
 
 .location-b{
   font-family: "Walter Turncoat";
-  margin-top: 100px;
   margin-bottom: 34px;
+  margin-top: 100px;
 }
 
 input{
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 290px;
-  height: 65px;
-  font-size: 35px;
   background-color: #444444;
   color: #dedede;
+  display: block;
+  font-size: 35px;
+  height: 65px;
+  margin-left: auto;
   margin-bottom: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 290px;
 }
 
 input:focus{
-  outline: none;
   background-color: #666666;
+  outline: none;
 }
 
 @media screen and (max-width : 959px){
